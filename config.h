@@ -6,8 +6,6 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-#include "colors.h"
-
 static char *font = "monospace:style=Regular:size=10:antialias=true:autohint=true";
 static int borderpx = 14;
 
@@ -102,32 +100,32 @@ float alpha = 1.0;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-  TANGO_00,
-  TANGO_01,
-  TANGO_02,
-  TANGO_03,
-  TANGO_04,
-  TANGO_05,
-  TANGO_06,
-  TANGO_07,
+  "#000000",
+  "#cc0000",
+  "#4e9a06",
+  "#c4a000",
+  "#3465a4",
+  "#75507b",
+  "#06989a",
+  "#d3d7cf",
 
 	/* 8 bright colors */
-  TANGO_08,
-  TANGO_09,
-  TANGO_10,
-  TANGO_11,
-  TANGO_12,
-  TANGO_13,
-  TANGO_14,
-  TANGO_15,
+  "#555753",
+  "#ef2929",
+  "#8ae234",
+  "#fce94f",
+  "#739fcf",
+  "#ad7fa8",
+  "#34e2e2",
+  "#eeeeec",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	TANGO_15, /* default foreground colour */
-	TANGO_00, /* default background colour */
+	"#ffffff", /* default foreground colour */
+	"#000000", /* default background colour */
 };
 
 
